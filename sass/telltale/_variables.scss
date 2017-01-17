@@ -1,0 +1,16 @@
+// Breakpoints
+$xs: "only screen and (max-width: 21.25em)";
+$small: "only screen and (max-width: 39.9375em)";
+$medium: "only screen and (max-width: 64em)";
+$large: "only screen and (min-width: 64em)";
+$xl: "only screen and (min-width: 68.75px)";
+
+
+// Layout
+$header-width: 28%;
+$fixed-element-width: 100% - $header-width;
+
+
+// Colors
+$white: #ffffff;
+$sidebar: #00B9EB;

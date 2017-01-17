@@ -1,0 +1,32 @@
+table {
+	margin: 1.5em 0;
+	width: 100%;
+
+	thead {
+		background: $light-gray;
+		text-align: left;
+	}
+
+	tbody {
+
+		tr {
+
+			&:not(:last-child) {
+				border-bottom: 1px solid $light-gray;
+			}
+		}
+	}
+
+	tfoot {
+		border-top: 3px solid;
+	}
+
+	th {
+		font-family: "Fjalla One", sans-serif;
+	}
+
+	th, td {
+		padding: 0.5rem;
+	}
+}
+

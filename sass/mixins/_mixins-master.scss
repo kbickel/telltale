@@ -1,0 +1,61 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Reset button styles
+@mixin button-reset {
+	border: none;
+	text-shadow: none;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+}
+
+// Inner Margin
+@mixin inner-margin {
+	margin: 0 4rem;
+
+	@media #{$medium} {
+		margin: 0 2rem;
+	}
+
+	@media #{$small} {
+		margin: 0 1rem;
+	}
+}
+
+// Inner Padding
+@mixin inner-padding {
+	padding: 0 4rem;
+
+	@media #{$medium} {
+		padding: 0 2rem;
+	}
+
+	@media #{$small} {
+		padding: 0 1rem;
+	}
+}

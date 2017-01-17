@@ -1,0 +1,75 @@
+@media #{$medium} {
+
+	/*
+	========== Header ==========
+	*/
+	#masthead {
+		height: auto;
+		width: 100%;
+		position: relative;
+		border-right: none;
+
+		.site-branding {
+			
+
+			.site-title {
+				
+
+				a {
+					
+				}
+			}
+
+			.site-description {
+				
+			}
+		}
+
+		.main-navigation {
+
+			li {
+				
+			}
+		}
+
+		#site-navigation {
+
+			#desktop-menu {
+				display: none;
+			}
+
+			#mobile-menu {
+
+			}
+
+			.mm-menu {
+				
+
+				.mm-panels > .mm-panel {
+					
+				}
+			}
+		}
+
+		#search {
+			position: relative;
+		}
+	}
+
+
+	/*
+	========== Body ==========
+	*/
+	#primary {
+		margin-left: 0;
+	}
+
+
+	/*
+	========== Footer ==========
+	*/
+	.site-footer {
+		margin-left: 0;
+	}
+
+}
