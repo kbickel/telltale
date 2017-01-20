@@ -127,9 +127,6 @@ img {
 svg:not(:root) {
   overflow: hidden; }
 
-figure {
-  margin: 1em 40px; }
-
 hr {
   box-sizing: content-box;
   height: 0; }
@@ -1084,8 +1081,7 @@ a.author {
     .fixed-top {
       position: relative;
       text-align: center;
-      border-top: 0.25rem solid;
-      border-bottom: 0.25rem solid; } }
+      border-top: 0.25rem solid; } }
   .fixed-top .select-dropdown {
     display: inline-block; }
     .fixed-top .select-dropdown select {
@@ -1116,6 +1112,31 @@ a.author {
 /*
 ========== Search Archive ==========
 */
+@media only screen and (max-width: 64em) {
+  .search-results .archive-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+@media only screen and (max-width: 39.9375em) {
+  .search-results .archive-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 .search-results .archive-title .search-form {
   float: right;
   margin-left: 0.5em;
@@ -1127,23 +1148,12 @@ a.author {
     border: none;
     border-radius: 0;
     outline: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "Fjalla One", sans-serif;
     padding: 0;
     color: #404040; }
   .search-results .archive-title .search-form .search-submit {
     font-size: 1.5rem; }
-@media only screen and (max-width: 39.9375em) {
-  .search-results .archive-title .archive-title {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
 
 /*
 ========== Posts ==========

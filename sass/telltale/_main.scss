@@ -450,7 +450,6 @@ a.author {
 		position: relative;
 		text-align: center;
 		border-top: 0.25rem solid;
-		border-bottom: 0.25rem solid;
 	}
 
 	.select-dropdown {
@@ -489,34 +488,39 @@ a.author {
 /*
 ========== Search Archive ==========
 */
-.search-results .archive-title {
-
-	.search-form {
-		float: right;
-		margin-left: 0.5em;
-		order: 2;
-
-		.search-field {
-			border: none;
-			border-radius: 0;
-			outline: none;
-			font-size: 1.5rem;
-			font-family: $headerFont;
-			padding: 0;
-			color: $color__text-main;
-		}
-
-		.search-submit {
-			font-size: 1.5rem;
-		}
-	}
+.search-results {
 
 	.archive-title {
+
+		@media #{$medium} {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
 		@media #{$small} {
 			display: flex;
 			flex-direction: column;
+		}
 
+		.search-form {
+			float: right;
+			margin-left: 0.5em;
+			order: 2;
+
+			.search-field {
+				border: none;
+				border-radius: 0;
+				outline: none;
+				font-size: 1.25rem;
+				font-family: $headerFont;
+				padding: 0;
+				color: $color__text-main;
+			}
+
+			.search-submit {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
